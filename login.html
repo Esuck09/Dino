@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/login.js"></script>
+    <link rel="stylesheet" href="styling/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <form name="login" method="POST">
+        <div class="login">
+            <!-- INPUT FIELDS -->
+            <label for="username"><b>Username</b></label><br>   
+            <input type="text" placeholder="Please enter your username" name="username" id="username" required><br>
+
+            <label for="password"><b>Password</b></label><br>
+            <input type="password" placeholder="Please enter your password" name="password" id="password" required><br>
+
+            <label>
+                <input type="checkbox" name="remember" checked>Remember Me
+            </label>
+            <br>
+            <input type="button" value="Login" id="submit" onclick="validate()">
+
+            <!-- LINK TO REGISTER -->
+            <div class="option">
+                <label for="register">
+                    No account with us?
+                    <a href="register.php">Register Here</a>
+                </label>
+            </div>
+        </div>
+    </form>
+
+
+</body>
+</html>
